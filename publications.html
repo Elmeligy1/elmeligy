@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Youssef Mohamed Elmeligy | AI Software Developer & Artificial Intelligence Student</title>
+    <meta name="description" content="Research publications by Youssef Mohamed Elmeligy in AI, deep learning, computer vision, and machine learning. Published papers and conference contributions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">YE</a>
+            
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="certifications.html" class="nav-link">Certifications</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="youtube.html" class="nav-link">YouTube</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Publications Section -->
+    <section class="page-section bg-secondary">
+        <div class="container">
+            <h2 class="page-title">
+                <span class="text-gradient">Publications</span>
+            </h2>
+            <p class="page-description">
+                Research contributions to the field of Artificial Intelligence
+            </p>
+
+            <!-- Analytics Section -->
+            <div class="analytics-section">
+                <h3 class="analytics-title">Publication Analytics</h3>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h4 class="chart-title">Publications by Year</h4>
+                        <canvas id="publicationsByYear"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h4 class="chart-title">Publications by Conference</h4>
+                        <canvas id="publicationsByConference"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h4 class="chart-title">Publication Status</h4>
+                        <canvas id="publicationStatus"></canvas>
+                    </div>
+                </div>
+            </div>
+
+                <div class="cards-grid publications-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-success">Published</span>
+                            <span class="card-year">2024</span>
+                        </div>
+                        <h3 class="card-title">Deep Learning for Brain Tumor Radiogenomic Classification: A Multi-Parametric MRI Images</h3>
+                        <p class="card-conference">CSDGTAI 2024</p>
+                        <span class="badge badge-orange">Galala University, Egypt</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            In this research, we will evaluate the ability of advanced deep learning models to predict methylation 
+                            of O6-methylguanine-DNA methyltransferase (MGMT) gene promoter methylation status using the data from mpMRI
+                             in a more performative manner than traditional methods. The present study involves usage of a variety of 
+                             architectures such as 3D Vision Transformers (ViT3D), Xception, ResNet50, EfficientNet-B3, and other models, 
+                             where different sequences of MRI including T1, T1-C, T2, and FLAIR were used for training. The present study
+                              showed that the Xception model has the highest Area Under Curve (AUC) at the test stage was 0.617, indicating
+                               that this model’s degree of discrimination of positive and negative samples is relatively high. Following 
+                               closely was the 512 ViT3D model which achieved a AUC of 0.6006, whereas 0.58078 and 0.55817 were recorded 
+                               respectively for fairly low performing architectures in this setting, ResNet50 and EfficientNet-B3.
+                                All these results emphasize the effectiveness of the best architectures, especially Xception, 
+                            in determining the status of MGMT gene promoter from mpMRI images.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="https://ieeexplore.ieee.org/document/11064842/" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-success">Published</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3 class="card-title">Explainable AI-Based Enhanced Classification of Gravitational Wave Anomalies Using Vision Transformers</h3>
+                        <p class="card-conference">SRC 2025</p>
+                        <span class="badge badge-orange">Zayed University, Dubai</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Gravitational wave Observatories like LIGO detect both genuine gravitational wave signals and various 
+                            forms of noise known as “glitches”. Our research tackles this challenge with a machine learning pipeline 
+                            enhanced by explainable AI (XAI). The proposed model begins by processing signal spectrograms with Vision 
+                            Transformers (ViT) and Swin Transformer to extract detailed visual patterns. Then augment these patterns with 
+                            numerical features (e.g., event duration, frequency) to create a comprehensive dataset. Several models—XGBoost, 
+                            Support Vector Machine, Artificial Neural Network, Random Forest, and Decision Tree—are evaluated on the Gravity 
+                            Spy dataset. The results show XGBoost, combined with ViT-derived features, attains 94.40% accuracy, outperforming 
+                            other approaches. To build trust in the model’s decisions, we apply explainability tools like SHAP and LIME, which 
+                            pinpoint the specific visual and numerical elements that drive each prediction. This high level of accuracy, paired
+                             with transparent insights, not only refines glitch detection but also boosts researchers’ 
+                            confidence in gravitational wave studies.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="https://ieeexplore.ieee.org/document/11263746/" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-blue">Accepted</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3 class="card-title">Solar Power Forecasting for Grid Stability Based on Machine Learning Approach</h3>
+                        <p class="card-conference">SRC 2025</p>
+                        <span class="badge badge-orange">Zayed University, Dubai</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Accurate prediction of solar power generation is essential for the optimization of 
+                            renewable energy systems, grid stability, and reducing the utilization of non-renewable sources. 
+                            This study investigates the accuracy of three advanced machine learning algorithms—Artificial Neural Networks (ANN),
+                             Random Forest (RF), and XGBoost—for predicting alternating current (AC) power generation in a solar plant. 
+                             The models are trained and tested using historical generation and weather data, including plant generation parameters 
+                             (e.g., AC power, DC power, inverter IDs) and weather sensor measurements (e.g., ambient temperature, irradiation, 
+                             module temperature). The performance is evaluated on the basis of Root Mean Squared Error (RMSE), where ANN achieves 
+                             the lowest RMSE of 1.8099, followed by Random Forest (RMSE: 1.9135) and XGBoost (RMSE: 1.9339). The results demonstrate
+                              the ability of machine learning models to capture complex, non-linear relationships in solar power generation data. 
+                              The research highlights the advantages of ANN in handling high-dimensional data, making it a promising approach for 
+                              solar power prediction. The findings are highly beneficial to energy management systems in integrating more effective
+                               solar energy into power grids and facilitating 
+                            the shift towards sustainable energy solutions.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="#" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-success">Published</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3 class="card-title">Swin Transformer for Bone Metastasis Classification: a Comparative Study with Transfer Learning Models</h3>
+                        <p class="card-conference">ITC-Egypt 2025</p>
+                        <span class="badge badge-orange">ADC, Egypt</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Bone metastasis is a severe complication in lung cancer patients, significantly
+                             impacting prognosis and treatment planning. Accurate and timely diagnosis is crucial for improving
+                              patient outcomes. In recent years, deep learning has demonstrated remarkable potential in medical image
+                               analysis, particularly in disease classification. This study presents a comparative analysis of deep learning
+                                models for bone metastasis classification, evaluating four convolutional neural network (CNN) 
+                                architectures—EfficientNetB0, MobileNetV2, ResNet50, and VGG16—alongside Swin Transformer, a vision 
+                                transformer-based model. The models were trained and tested on a dataset comprising 767 training images, 
+                                164 validation images, and 166 test images, categorized into benign, malignant, and normal cases. Performance
+                                 was assessed using accuracy, precision, recall, and F1-score metrics. Experimental results indicate that Swin 
+                                 Transformer outperformed all CNN-based models, achieving the highest classification accuracy of 95%, demonstrating 
+                                 superior performance across all evaluation metrics. Among CNNs, MobileNetV2 and VGG16 achieved the highest accuracy 
+                                 (94%), with MobileNetV2 being computationally more efficient. ResNet50 and EfficientNetB0 exhibited lower accuracy,
+                                  particularly in distinguishing benign cases. These findings highlight the potential of Swin Transformer for enhanced
+                                   bone metastasis detection and suggest the need for further
+                             research on model generalization using larger and more diverse datasets.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="https://ieeexplore.ieee.org/document/11186664/" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-success">Published</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3 class="card-title">Advancing Real Time Military Aircraft Detection: a Comprehensive Comparative Benchmark of Object Detection Frameworks</h3>
+                        <p class="card-conference">ITC-Egypt 2025</p>
+                        <span class="badge badge-orange">ADC, Egypt</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            This paper provides a comprehensive comparative analysis of deep learning and transformer-based models of the state of the 
+                            art military aircraft detection from aerial imagery. We evaluate the performance of some models like EfficientNetB3, 
+                            EfficientNetB5, Vision Transformer (ViT), and Swin Transformer on a specialized military aircraft dataset.
+                             Our experimental results demonstrate EfficientNetB3 to be 93 % accurate in the classification of military aircraft with 
+                             computational efficiency, according to the compound scaling principles established by Tan and 
+                             Le. We also employ RT-DETR for object detection, which is 92.7%mAP and 90.4 % recall on 81 different types of military aircraft.
+                              For comparison, YOLOv8 yielded 94%mAP and 88.1% recall, and YOLOv7 yielded 90.2% mAP and 82.7 % recall, pushing the real-time 
+                              detection benchmark established by Redmon et al. further. We use aggressive data augmentation techniques and preprocessing pipelines 
+                              for enhancing model generalizability.
+
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="https://ieeexplore.ieee.org/document/11186680/" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-success">Published</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3 class="card-title">Enhanced Gender Classification in Panoramic Dental X-Rays Based on Deep Learning and Hybrid Swarm Algorithm</h3>
+                        <p class="card-conference">ITC-Egypt 2025</p>
+                        <span class="badge badge-orange">ADC, Egypt</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Gender classification from panoramic dental X-ray images has significant applications in forensic 
+                            identification and clinical dentistry. This study proposes a novel hybrid approach combining deep learning with 
+                            metaheuristic optimization for accurate gender prediction. Our primary model employs a fine-tuned DenseNet121 
+                            architecture for robust feature extraction from dental radiographs, enhanced by a two-stage feature selection 
+                            process using Particle Swarm Optimization (PSO) and Grey Wolf Optimizer (GWO). For comprehensive evaluation, we 
+                            compare this against two alternative implementations: a custom Convolutional Neural Network designed specifically 
+                            for dental images and a fine-tuned ResNet50 model. The custom CNN processes grayscale images and learns features 
+                            directly from the dataset, while both DenseNet121 and ResNet50 utilize RGB inputs with transfer learning from
+                             pre-trained weights. All extracted features undergo optimization through our hybrid PSO-GWO algorithm before 
+                             classification with Logistic Regression, ensuring both computational efficiency and model interpretability. 
+                             Experimental results demonstrate that our DenseNet-based approach achieves superior performance with 95.88% accuracy,
+                              outperforming both the ResNet50 model (93.81%) and custom CNN (91.75%). This performance advantage, establishes the 
+                              effectiveness of combining deep feature extraction with metaheuristic optimization for dental image analysis. 
+                              The study provides a practical framework for developing accurate,
+                             efficient diagnostic tools in dental forensics and clinical practice.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-type">Conference Paper</span>
+                            <a href="https://ieeexplore.ieee.org/document/11186574/" class="btn btn-ghost">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3 class="footer-name">Youssef Mohamed Elmeligy</h3>
+                <p class="footer-role">AI Researcher & AI System Developer</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/youssefelmeligy" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Elmeligy1" target="_blank">GitHub</a>
+                <a href="https://www.youtube.com/@AIinBestWay" target="_blank">YouTube</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Youssef Mohamed Elmeligy.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Chart.js initialization with publication data
+        const chartConfig = {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#FFFFFF',
+                        font: {
+                            family: "'Inter', sans-serif",
+                            size: 12
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        color: '#666666',
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(51, 51, 51, 0.5)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#666666',
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(51, 51, 51, 0.5)'
+                    }
+                }
+            }
+        };
+
+        // Publications by Year
+        const yearCtx = document.getElementById('publicationsByYear').getContext('2d');
+        new Chart(yearCtx, {
+            type: 'bar',
+            data: {
+                labels: ['2024', '2025'],
+                datasets: [{
+                    label: 'Number of Publications',
+                    data: [1, 5],
+                    backgroundColor: ['#FF6B35', '#F7931E'],
+                    borderColor: ['#FF6B35', '#F7931E'],
+                    borderWidth: 2,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                ...chartConfig,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 6,
+                        ticks: {
+                            color: '#666666',
+                            stepSize: 1
+                        },
+                        grid: {
+                            color: 'rgba(51, 51, 51, 0.5)'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#666666'
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Publications by Conference
+        const conferenceCtx = document.getElementById('publicationsByConference').getContext('2d');
+        new Chart(conferenceCtx, {
+            type: 'bar',
+            data: {
+                labels: ['SRC 2025', 'ITC-Egypt 2025', 'CSDGTAI 2024'],
+                datasets: [{
+                    label: 'Number of Publications',
+                    data: [2, 3, 1],
+                    backgroundColor: ['#FF6B35', '#F7931E', '#FF8C42'],
+                    borderColor: ['#FF6B35', '#F7931E', '#FF8C42'],
+                    borderWidth: 2,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                ...chartConfig,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 3.5,
+                        ticks: {
+                            color: '#666666',
+                            stepSize: 1
+                        },
+                        grid: {
+                            color: 'rgba(51, 51, 51, 0.5)'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#666666'
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Publication Status
+        const statusCtx = document.getElementById('publicationStatus').getContext('2d');
+        new Chart(statusCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Published', 'Accepted'],
+                datasets: [{
+                    data: [5, 1],
+                    backgroundColor: ['#FF6B35', '#4CAF50'],
+                    borderColor: '#1A1A1A',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                ...chartConfig,
+                plugins: {
+                    ...chartConfig.plugins,
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                return context.label + ': ' + context.parsed + ' (' + percentage + '%)';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
